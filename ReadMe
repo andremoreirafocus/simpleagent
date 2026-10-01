@@ -1,0 +1,40 @@
+
+
+requirements.txt
+
+C:/Users/velmu/AppData/Local/Programs/Python/Python314/python.exe -m venv venv
+
+venv\Scripts\activate
+
+
+// installig lib
+pip install -r requirements.txt
+
+
+Test scenarios
+
+Try the following one at a time:
+
+1. **Discount calculation**
+Calculate a 10% discount on a price of 1000.
+Expected business result: the final price is `900.0` (or an equivalent natural-language answer).
+
+2. **Discount with different values**
+What is the final price for 2500 after a 20% discount?
+Expected business result: the final price is `2000.0`.
+
+3. **Addition**
+What is 125 plus 75?
+Expected business result: `200`.
+
+4. **Addition with negative numbers**
+Add -15 and 27.
+Expected business result: `12`.
+
+5. **Weather lookup**
+What is the current weather in Boston?
+Expected result: the weather tool returns the current conditions for Boston, or a lookup error if the weather service is unavailable.
+
+6. **Exit the program**
+exit
+`exit`, `quit`, and `q` all stop the interactive session.
