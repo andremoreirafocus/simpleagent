@@ -8,10 +8,10 @@ from langchain_core.callbacks import BaseCallbackHandler
 
 from business_function import sum, calculate_discount, get_weather
 
-load_dotenv()
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
-llm = ChatGroq(model="openai/gpt-oss-120b")
+load_dotenv()
+AGENT_MODEL = os.getenv("AGENT_MODEL")
+llm = ChatGroq(model=AGENT_MODEL)
 #model_id = "us.anthropic.claude-sonnet-4-5-20250929-v1:0"
 
 #llm = ChatBedrock( model_id=model_id, region_name=os.getenv("AWS_REGION", "us-east-1"))

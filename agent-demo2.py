@@ -3,15 +3,14 @@ from langchain_core.prompts import ChatPromptTemplate
 import os
 from dotenv import load_dotenv
 load_dotenv()
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
-
+AGENT_MODEL = os.getenv("AGENT_MODEL")
 #Example: ChatGroq with System + Human Prompt + Prompt Template
 #System Prompt → Defines the AI's role, rules, behavior
 #Human Prompt → User's actual request/input
 #Prompt Template → Reusable structure with variables
 
 # 1. Create LLM
-llm = ChatGroq(model="openai/gpt-oss-120b",
+llm = ChatGroq(model=AGENT_MODEL,
     temperature=0.2
 )
 
